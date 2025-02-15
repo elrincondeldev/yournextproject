@@ -1,36 +1,108 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🚀 YourNextProject
 
-## Getting Started
+<div align="center">
+  <img src="public/logo.png" alt="YourNextProject Logo" width="200"/>
+  
+  ![Next.js](https://img.shields.io/badge/Next.js-13.0-black?style=for-the-badge&logo=next.js)
+  ![TypeScript](https://img.shields.io/badge/TypeScript-5.0-blue?style=for-the-badge&logo=typescript)
+  ![Prisma](https://img.shields.io/badge/Prisma-4.0-2D3748?style=for-the-badge&logo=prisma)
+  ![Tailwind CSS](https://img.shields.io/badge/Tailwind-3.0-38B2AC?style=for-the-badge&logo=tailwind-css)
+</div>
 
-First, run the development server:
+## 📋 Descripción
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+YourNextProject es una plataforma innovadora diseñada para compartir y descubrir ideas de proyectos de programación. Los desarrolladores pueden publicar sus ideas, recibir votos de la comunidad y encontrar inspiración para sus próximos proyectos.
+
+## ✨ Características
+
+- 🎯 **Categorización de Ideas**: Frontend, Backend, Fullstack
+- 👥 **Sistema de Votación**: Upvote/Downvote para ideas
+- 🔄 **Carga Infinita**: Navegación fluida de ideas
+- 📱 **Diseño Responsivo**: Experiencia óptima en todos los dispositivos
+- ⚡ **Rendimiento Optimizado**: Carga rápida y eficiente
+- 🎨 **UI Moderna**: Interfaz intuitiva y atractiva
+
+## 🛠️ Tecnologías
+
+- **Frontend**
+  - Next.js 13
+  - TypeScript
+  - Tailwind CSS
+  - React Intersection Observer
+
+- **Backend**
+  - Next.js API Routes
+  - Prisma ORM
+  - PostgreSQL
+
+## 🚀 Instalación
+
+1. **Clonar el repositorio**
+   ```bash
+   git clone https://github.com/yourusername/yournextproject.git
+   cd yournextproject
+   ```
+
+2. **Instalar dependencias**
+   ```bash
+   npm install
+   ```
+
+3. **Configurar variables de entorno**
+   ```bash
+   cp .env.example .env
+   ```
+   Edita el archivo `.env` con tus configuraciones
+
+4. **Inicializar la base de datos**
+   ```bash
+   npx prisma migrate dev
+   ```
+
+5. **Iniciar el servidor de desarrollo**
+   ```bash
+   npm run dev
+   ```
+
+## 📦 Estructura del Proyecto
+
+```
+src/
+├── app/
+│   ├── api/           # API Routes
+│   ├── components/    # Componentes React
+│   └── page.tsx       # Página principal
+├── prisma/
+│   └── schema.prisma  # Esquema de la base de datos
+└── public/            # Archivos estáticos
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 🤝 Contribuir
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+1. Fork el proyecto
+2. Crea una rama para tu feature (`git checkout -b feature/AmazingFeature`)
+3. Commit tus cambios (`git commit -m 'Add: Amazing Feature'`)
+4. Push a la rama (`git push origin feature/AmazingFeature`)
+5. Abre un Pull Request
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## 📄 Licencia
 
-## Learn More
+Este proyecto está bajo la Licencia MIT - ver el archivo [LICENSE.md](LICENSE.md) para más detalles.
 
-To learn more about Next.js, take a look at the following resources:
+## 👥 Equipo
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- [Tu Nombre](https://github.com/yourusername) - Desarrollador Principal
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## 🙏 Agradecimientos
 
-## Deploy on Vercel
+- [Next.js](https://nextjs.org/)
+- [Prisma](https://www.prisma.io/)
+- [Tailwind CSS](https://tailwindcss.com/)
+- [Vercel](https://vercel.com/)
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+---
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+<div align="center">
+  <p>¿Te gusta el proyecto? ¡Dale una ⭐!</p>
+  <p>Desarrollado con ❤️ por el equipo de YourNextProject</p>
+</div>
