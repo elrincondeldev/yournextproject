@@ -125,7 +125,7 @@ export default function IdeasView({ currentCategory }: IdeasViewProps) {
 
   if (initialLoading) {
     return (
-      <div className="grid grid-cols-1 gap-6">
+      <div className="grid grid-cols-1 gap-6 max-w-5xl mx-auto px-4 sm:px-6">
         {[...Array(ITEMS_PER_PAGE)].map((_, index) => (
           <IdeaSkeleton key={index} />
         ))}
@@ -134,7 +134,7 @@ export default function IdeasView({ currentCategory }: IdeasViewProps) {
   }
 
   return (
-    <div className="grid grid-cols-1 gap-6">
+    <div className="grid grid-cols-1 gap-6 max-w-5xl mx-auto px-4 sm:px-6">
       {ideas.map((idea) => (
         <Idea
           key={idea.id}
@@ -147,7 +147,7 @@ export default function IdeasView({ currentCategory }: IdeasViewProps) {
           onVote={handleVote}
         />
       ))}
-      <div ref={ref} className="flex justify-center mt-8">
+      <div ref={ref} className="flex justify-center mt-4">
         {loading && !initialLoading && (
           <div className="grid grid-cols-1 gap-6 w-full">
             <IdeaSkeleton />
@@ -155,12 +155,12 @@ export default function IdeasView({ currentCategory }: IdeasViewProps) {
         )}
       </div>
       {!hasMore && ideas.length > 0 && (
-        <p className="text-center text-gray-500 mt-8">
+        <p className="text-center text-gray-400 mt-8 font-medium">
           No hay más ideas para mostrar
         </p>
       )}
       {!loading && ideas.length === 0 && (
-        <p className="text-center text-gray-500 mt-8">
+        <p className="text-center text-gray-400 mt-8 font-medium">
           No hay ideas en esta categoría
         </p>
       )}

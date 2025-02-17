@@ -25,9 +25,14 @@ export async function GET(request: Request) {
       where,
       skip,
       take: limit,
-      orderBy: {
-        votes: "desc",
-      },
+      orderBy: [
+        {
+          votes: "desc",
+        },
+        {
+          created_at: "desc",
+        },
+      ],
     });
 
     // Obtener el total de ideas para la paginación
